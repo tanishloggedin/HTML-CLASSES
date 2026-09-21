@@ -4,5 +4,41 @@
     <title>USER FORM</title>
 </head>
 <body>
+    <h1>
+        HTML FORM CLASS
+    </h1>
+    <form action = "codingclass.php" method = "post" 
+    target = "_blank" enctype="multipart/form-data">
+    
+<label for = "first_name">First Name</label>
+    <input type = "text" name = "first_name" id = "first_name" placeholder="enter your first name"><br><br>
+    <label for = "last_name">Last Name</label>
+    <input type = "text" name = "last_name" id = "last_name" placeholder="enter your last name"><br><br>
+    <label for = "email">Email</label>
+    <input type = "email" name = "email" id = "email" placeholder="enter your email id"><br><br>
+    <label for = "mobile_number">Mobile Number</label>
+    <input type = "number" name = "mobile_number" id = "mobile_number" placeholder="enter your mobile number"><br><br>
+    <label for = "gender">Gender</label>
+    <input type = "radio" name = "gender" id = "male" value="male">
+    <label for = "male">Male</label>
+    <input type = "radio" name = "gender" id = "female" value="female">
+    <label for = "female">Female</label><br><br>
+    <label for = "dob">Date of Birth</label>
+    <input type = "date" name = "dob" id = "dob"><br><br>
+    <label for = "time">Time</label>
+    <input type = "time" name = "time" id = "time"><br><br>
+    <label for = "age">Age</label>
+    <input type = "number" name = "age" id = "age" placeholder="enter your age" min="18" max="25"><br><br>
+    <label for = "password">Password</label>
+    <input type = "password" name = "password" id = "password" placeholder="enter your password" required><br><br>
+    <label for = "language">Choose any language</label><br>
+    <input type = "checkbox" name = "language" id = "language"> HTML<br>
+     <input type = "checkbox" name = "language" id = "language"> CSS<br>
+     <input type = "checkbox" name = "language" id = "language"> JAVA<br>
+     <br>
+     <input type = "file" name = "file" id = "file"><br><br>
+     <input type = "submit" name = "submit" id = "submit" value="submit">
+     <input type = "reset" name = "reset" id = "reset" value="reset">
+</form>
 </body>
 </html>
