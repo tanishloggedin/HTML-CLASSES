@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: red;
+        }
+
+
+        h1{
+            color: aquamarine;
+        }
+
+        /* CLASS SELECTOR WITH A (.) */
+        .box{
+            border: 2px solid black;
+        }
+
+        /* ID SELECTOR WITH A (#) */
+        #header {
+            background-color: bisque;
+        }
+
+        h3,p {
+            color: chartreuse;
+        }
+        /* DESENDENT SELECTOR */
+        .desedent p {
+            color: red;
+        }
+        /* CHILD SELECTOR */
+        .child > p {
+            color: burlywood;
+        }
+        /* PSEUDO SELECTOR */
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+            background-color: blue;
+            
+        }
+        /* PSEDUO SELECTOR (FOCUS) */
+        input:focus {
+            border: 2px solid red;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS TRIAL</h1>
+    <p>this is try for css</p>
+
+    <!-- CLASS SELECTOR -->
+    <div class="box">box 1</div>
+    <p class="box">box 2</p>
+
+    <!-- ID SELECTOR -->
+     <h2 id="header">website header</h2>
+<br>
+     <!-- GROUP SELECTOR -->
+      <h2>GROUP SELECTOR</h2>
+    <p>this is try for group selector</p>
+<br>
+    <!-- DESEDENT -->
+     <h2>DESENDENT SELECTOR</h2>
+     <div class="desedent">
+        <p>yeh direct paragraph hai</p>
+        <section>
+            <p>yeh nested paragraph hai</p>
+        </section>
+     </div>
+<br>
+        <!-- CHILD SELECTOR -->
+         <h2>CHILD SELECTOR</h2>
+      <div class="child">
+
+        <p>yeh child selector ka example hai</p>
+        <section>
+            <p>yeh child selector ka example 2 hai</p>
+        </section>
+     </div>
+<br>
+
+<!-- PSEUDO CLASS -->
+ <h2>PSEUDO SELECTOR</h2>
+ <a href="https://drive.google.com/drive/u/1/folders/19S-tnA4IfBZq-4u7FpeepK5IkhpBgeot">
+    css selector class 1
+ </a>
+<br><br>
+
+ <!-- INPUT FOCUS -->
+  <h2>PSEUDO SELECTOR (FOCUS)</h2>
+  <label id="first_name">enter your name:</label>
+  <input type="text" name="first_name" placeholder="enter your name">
+
+</body>
+</html>
