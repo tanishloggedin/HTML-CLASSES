@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+       color: aqua;
+       background-color: antiquewhite; 
+    }
+
+    p{
+        color:black;
+    }
+
+    .box{
+        width: 300px;
+        height: 200px;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .box p {
+        color: oklab(94.093% 0.00516 0.0015);
+    }
+
+    .container p {
+        color: oklab(94.25099999999999% 0.00724 0.00215);
+    }
+
+    .container{
+        /* width ko percentage se style karte hai */
+        width: 100%;
+        height: 10px;
+        background-color: rgb(42, 163, 165);
+        padding: 20px;
+    }
+
+/* EM  */
+    .parent{
+        font-size: 20px;
+    }
+
+    .child {
+        font-size: 1.5em;
+        
+    }
+/* REM  */
+    html{
+        font-size: 16px;
+    }
+
+    .text{
+        font-size: 1.5rem;
+    }
+
+    /* VIEWPOINT CONTAINER */
+    .viewpoint{
+        width: 20vw;
+        height: 20vh;
+        background-color: rgb(159, 141, 211);
+    }
+
+    .viewpoint p{
+        color: rgb(255, 255, 255);
+    }
+
+    /* TEXT BASED UNITS */
+    .text_based{
+      width: 40ch;
+      line-height: 2.5lh;
+    }
+
+    /* GRID UNIT */
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .grid-item{
+        background-color: rgb(159, 141, 211);
+        padding: 10px;
+        height: 100px;
+
+        
+    }
+
+    .pixel{
+        width: 1000px;
+        height: 200px;
+        background-color: rgb(57, 254, 90);
+    }
+
+    .percentage{
+        width: 50%;
+        height: 200px;
+        background-color:aqua;
+    }
+</style>
+<body>
+    <!-- SELECTOR -->
+    <h1>CSS EXPERIMENT</h1>
+    <p>this is my trial for css </p>
+    <br>
+
+        <!-- BOX -->
+    <div class="box">
+    <p>this is trial for box</p>
+    </div>
+
+<br>
+
+    <div class="container">
+        <p>this is a container</p>
+    </div>
+<br>
+    <!-- EM UNIT -->
+    <div class="parent">
+        <p>PARENT CLASS FOR EM</p>
+    </div>
+<br>
+     <div class="child">
+        <p>CHILD CLASS FOR EM</p>
+    </div>
+<br>
+
+    <!-- REM UNIT -->
+<div class="text">
+    <p>TEXT CLASS FOR REM</p>
+</div>
+<br>
+
+<!-- VIEWPOINTS -->
+ <div class="viewpoint">
+    <p>VIEWPOINTS</p>
+ </div>
+<br>
+
+ <!-- TEXT BASED UNITS -->
+  <div class="text_based">
+    <p>TEXT BASED UNITS.THIS IS THE TRY FOR CH AND LH FOR THE TEXT TO BE ALLIGNED AND TURNOVER</p>
+  </div>
+ <br>
+
+ <!-- GRID UNIT -->
+ <div class="grid">
+    <div class="grid-item">Grid Item 1</div>
+    <div class="grid-item">Grid Item 2</div>
+    <div class="grid-item">Grid Item 3</div>
+    <div class="grid-item">Grid Item 4</div>
+ </div>
+<br>
+ <div class="pixel">
+    <p>example of pixel unit</p> </div><br>
+
+ <div class="percentage">
+    <p>example of percentage unit</p> </div>
+
+</body>
+</html>
