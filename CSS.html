@@ -54,6 +54,17 @@
             border: 2px solid red;
             outline: none;
         }
+
+        
+
+        /* ATTRIBUTE SELECTOR */
+        input[type="text"]{
+            border: 2px solid blue;
+        }
+
+        input[type="password"]{
+            border: 2px solid red;
+        }
     </style>
 </head>
 <body>
@@ -103,5 +114,12 @@
   <label id="first_name">enter your name:</label>
   <input type="text" name="first_name" placeholder="enter your name">
 
+  <br> <br>
+
+  <!-- ATTRIBUTE SELECTOR -->
+   <label id="name">second name:</label>
+   <input type="text" name="text" placeholder="enter name"><br>
+   <label id="password">enter your password:</label>
+   <input type="password" name="password" placeholder="enter your password">
 </body>
 </html>
