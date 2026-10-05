@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* ABSOLUTE (px) */
+        p {
+            font-size: 30px;
+        }
+
+        /* RELATIVE (rem) */
+        .para p {
+            font-size: 1.7rem;
+        }
+
+        /* RELATIVE (em) */
+        .empara p {
+            font-size: 1.8em;
+        }
+
+        /* RELATIVE (%) */
+        .percent {
+            font-size: 24px;
+        }
+
+        .percent p {
+            font-size: 180%;
+        }
+
+        /* RELATIVE (vw) */
+        .vwpara p {
+            font-size: 4vw;
+        }
+
+        /* RELATIVE (vh) */
+        .vhpara p {
+            font-size: 4vh;
+        }
+
+        /* RELATIVE (larger) */
+        .larger p {
+            font-size: larger;
+        }
+
+        /* RELATIVE (xx-large) */
+        .xx-large p {
+            font-size: xx-large;
+        }
+
+        /* RELATIVE (clamp) */
+        .clamp p {
+            font-size: clamp(1rem, 2.5vw, 3rem);
+        }
+
+        /* FONT STYLE */
+        .italic p {
+            font-style:italic;
+            font-size: 4vh;
+            font-size: 4vw;
+        }
+
+        .normal p {
+            font-style: normal;
+            font-size: 4vh;
+            font-size: 4vw;
+        }
+
+        .oblique p {
+            font-style: oblique;
+            font-size: 4vh;
+            font-size: 4vw;
+        }
+
+        /* FONT WEIGHT */
+        .normalweight p {
+            font-weight:normal;
+        }
+
+        .boldweight p {
+            font-weight:bold;
+        }
+
+        .lighterweight p {
+            font-weight:lighter;
+        }
+
+        .bolderweight p {
+            font-weight:bolder;
+        }
+
+        .weight100 p {
+            font-weight:100;
+        }
+
+        .weight200-300 p {
+            font-weight:300;
+        }
+
+        .weight400 p {
+            font-weight:400;
+        }
+
+        .weight500 p {
+            font-weight:500;
+        }
+
+        .weight600 p {
+            font-weight:600;
+        }
+
+        .weight700 p {
+            font-weight:700;
+        }
+
+        .weight800 p {
+            font-weight:800;
+        }
+
+        .weight900 p {
+            font-weight:900;
+        }
+
+        /* FONT VARIANT */
+        .smallcaps p {
+            font-variant: small-caps;
+            font-size: 3vh;
+            font-size: 3vw;
+        }
+    </style>
+
+<!-- ABSOLUTE (px) -->
+ <h2>Absolute (px)</h2>
+<p>This is a 30px text </p>
+
+<!-- RELATIVE (rem) -->
+ <h2>Relative (rem)</h2>
+<div class="para">
+    <p>This is a 1.7rem text </p>
+</div>
+
+<!-- RELATIVE (em) -->
+ <h2>Relative (em)</h2>
+ <div class="empara">
+    <p>This is a 1.8em text </p>
+</div>
+
+<!--RELATIVE (%) -->
+<h2>Relative (%)</h2>
+<div class="percent">
+    <p>This is a 180% text </p>
+</div>
+
+<!-- RELATIVE (vw) -->
+ <h2>Relative (vw)</h2>
+<div class="vwpara">
+    <p>This is a 4vw text </p>
+</div>
+
+<!-- RELATIVE (vh)  -->
+ <h2>Relative (vh)</h2>
+<div class="vhpara">
+    <p>This is a 4vh text </p>
+</div>
+
+<!-- RELATIVE (larger) -->
+ <h2>Relative (larger)</h2>
+ <div class="larger">
+    <p>This is a larger text </p>
+</div>
+
+<!-- RELATIVE (XX-LARGE) -->
+ <H2>Relative (XX-LARGE)</H2>
+ <div class="xx-large">
+    <p>This is a xx-large text </p>
+</div>
+
+<!-- RELATIVE (Clamp) -->
+ <h2>Relative (Clamp)</h2>
+<div class="clamp">
+    <p>This is a clamp text </p>
+</div>
+<hr>
+
+
+<!-- FONT STYLE -->
+ <h2><u>ITALIC</u></h2>
+ <div class="italic">
+    <p>This is a italic text </p>
+
+    <h2><u>NORMAL</u></h2>
+    <div class="normal">
+        <p>This is a normal text </p>
+
+    <h2><u>OBLIQUE</u></h2>
+    <div class="oblique">   
+        <p>This is a oblique text </p>
+<hr>
+
+
+    <!-- FONT WEIGHT -->
+     <h2><u>NORMAL</u></h2>
+     <div class="normalweight">
+        <p>This is a normal weight text </p></div>
+
+    <h2><u>BOLD</u></h2>
+    <div class="boldweight">
+        <p>This is a bold weight text </p></div>
+
+    <h2><u>LIGHTER</u></h2>
+    <div class="lighterweight">
+        <p>This is a lighter weight text </p></div>
+
+    <h2><u>BOLDER</u></h2>
+    <div class="bolderweight">
+        <p>This is a bolder weight text </p></div>
+
+    <h2><u>100 WEIGHT</u></h2>
+    <div class="weight100">
+        <p>This is a 100 weight text </p></div>
+
+    <h2><u>200-300 WEIGHT</u></h2>
+    <div class="weight200-300">
+        <p>This is a 200-300 weight text </p></div>
+
+    <h2><u>400 WEIGHT</u></h2>
+    <div class="weight400">
+        <p>This is a 400 weight text </p></div>
+
+    <h2><u>500 WEIGHT</u></h2>
+    <div class="weight500">
+        <p>This is a 500 weight text </p></div>
+
+    <h2><u>600 WEIGHT</u></h2>
+    <div class="weight600">
+        <p>This is a 600 weight text </p></div>
+
+    <h2><u>700 WEIGHT</u></h2>
+    <div class="weight700">
+        <p>This is a 700 weight text </p></div>
+
+    <h2><u>800 WEIGHT</u></h2>
+    <div class="weight800">
+        <p>This is a 800 weight text </p></div>
+
+    <h2><u>900 WEIGHT</u></h2>
+    <div class="weight900">
+        <p>This is a 900 weight text </p></div>
+<hr>
+        <!-- FONT VARIANT -->
+    <h2><u>SMALL CAPS</u></h2>
+    <div class="smallcaps">
+        <p>This is a small caps text </p></div>
+        
+        
+</body>
+</html>
