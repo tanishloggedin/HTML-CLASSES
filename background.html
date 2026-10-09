@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .backcolor {
+            background-color: rgb(32, 202, 43);
+        }
+
+        .backcolorf {
+            background-color: #f2f2;
+        }
+
+        .backrgba {
+            background-color: rgb(23, 143, 167);
+        }
+
+        .backtrans {
+            background-color: transparent;
+        }
+
+        .backinheritp {
+            background-color: rgb(185, 229, 29);
+        }
+
+        .backinheritc {
+            background-color: inherit;
+        }
+
+        /* BACKGROUND IMAGE */
+        .backurl {
+            background-image: url("https://imgs.search.brave.com/qdTOBUH76uMWDq7XiGbXKZuU_um_yN_y2TLGMBMnt7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFJdExsem5jdUwu/anBn");
+            width: 200px;
+            height: 200px;
+        }
+        .backlinear {
+            background-image: linear-gradient(to right, red, yellow);
+            color: white;
+        }
+
+        .backradial {
+            background-image: radial-gradient(circle, red, blue);
+        }
+
+        /* BACKGROUND REPEAT */
+        .backnorepeat {
+            background-image: url("https://imgs.search.brave.com/SGSnrNFd87dcg0DX6ttg-fei5KDoDP3uqFbXhm6TxFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE5Lzc2Lzg1LzQ0/LzM2MF9GXzE5NzY4/NTQ0NjNfeVB0Tzdu/RldVblVrc1BHTWs4/dkVMU3B2OFFTQndH/cGIuanBn");
+            height: 600px;
+            width: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .backrxy {
+            background-image: url("https://imgs.search.brave.com/QXqWeM8LVxD7_yBsO9odcxBUkADw-PevJngTNjWGZfc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9kbWMtYm9s/ZC1hZ2dyZXNzaXZl/LWxldHRlcnMtYnVz/aW5lc3MtNjAwbnct/MjUxMjgzOTM0NS5q/cGc");
+            height: 800px;
+            width: 800px;
+            background-repeat: repeat-x; 
+            /* SAME FOR REPEAT-Y */
+        }
+
+        .backspace{
+            background-image: url("https://imgs.search.brave.com/tc9utH8E4Rc67cxpUMfOiznzgyWKusZNY7o8mIAJtO8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNy5o/aWNsaXBhcnQuY29t/L3ByZXZpZXcvMjgy/Lzg5MS83ODYvc3F1/YXJlLW1ldGVyLXNx/dWFyZS1tZXRlci1w/YXN0b3Itc21hbGwt/dHJhaW4tdGh1bWJu/YWlsLmpwZw");
+            height: 700px;
+            width: 700px;
+            background-repeat: space;
+        }
+
+        .backround {
+            background-image: url("https://imgs.search.brave.com/h2SLp-Pvmri9PFM3sfRlCZDYtxF5Izaa6wY0rwx5gy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/ZWxlbWVudF9vdXIv/MjAxOTA1MzEvb3Vy/bWlkL3BuZ3RyZWUt/eWVsbG93LXNtYWxs/LXNxdWFyZXMtMi01/ZC1mcmVlLXZlY3Rv/ci1pbWFnZV8xMzE5/NDYzLnBuZw");
+            height: 500px;
+            width: 600px;
+            background-repeat: round;
+        }
+
+        /* BACKGROUND POSITION */
+        .backcenter{
+            background-image: url("https://imgs.search.brave.com/wSWWd6Uz6HQUPnHhxV2oO5seY1qSquwtMjsIbIXbjrk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzcv/NDczLzA3Mi9zbWFs/bC9sb2dvLWRlc2ln/bi1vZi1hLWhhbmQt/aG9sZGluZy1hLXNt/YWxsLXBsYW50LXdp/dGgtZ3JlZW4tbGVh/dmVzLXJlcHJlc2Vu/dGluZy1ncm93dGgt/YW5kLW5hdHVyZS13/aXRoLXNwYWNlLWZv/ci1icmFuZC1uYW1l/LWFuZC10YWdsaW5l/LXZlY3Rvci5qcGc");
+            height: 600px;
+            width: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 7px solid black;
+        }
+    </style>
+
+    <!-- BACKGROUND COLOR -->
+     <h1>BACKGROUND COLOR</h1>
+     <div class="backcolor">
+        <p>THIS IS FOR CHANGING THE BACKGROUND COLOR</p>
+     </div>
+<hr>
+
+     <!-- FFFFFF -->
+      <h2>testing ffffff</h2>
+      <div class="backcolorf">
+        <p>THIS IS TO CHECK THE BACKGROUND COLOR FOR FFFFFF</p>
+      </div>
+<hr>
+      <!-- RGBA -->
+       <h2>testing rgba</h2>
+       <div class="backrgba">
+        <p>THIS IS TO CHECK THE BACKGROUND COLOR FOR RGBA</p>
+       </div>
+
+<hr>
+       <!-- TRANSPARENT -->
+        <h2>testing transparent</h2>
+        <div class="backtrans">
+            <p>THIS IS TO CHECK FOR TRANSPARENCY IN BACKGROUND</p>
+        </div>
+
+<hr>
+        <!-- INHERIT -->
+         <h2>testing inherit</h2>
+         <div class="backinheritp">
+            <p>this is to test if child inherits the background color</p>
+            <div class="backinheritc">
+                <p>this is the child</p>
+            </div>
+         </div>
+<hr>
+
+         <!-- BACKGROUND IMAGE -->
+          <h1>BACKGROUND IMAGE</h1>
+         <!-- URL -->
+          <h2>testing url</h2>
+          <div class="backurl">
+            <p>url</p>
+          </div>
+<hr>
+          <!-- LINEAR GRADIENT -->
+           <h2>testing linear gradient</h2>
+           <div class="backlinear">
+            <p>test for linear gradient</p>
+           </div>
+<hr>
+           <!-- RADIAL GRADIENT -->
+            <h2>testing radial gradient</h2>
+            <div class="backradial">
+                <p>testing for radial gradient</p>
+            </div>
+<hr>
+            <!-- BACKGROUND REPEAT -->
+             <h1>BACKGROUND REPEAT</h1>
+             <!-- no repeat -->
+             <h2>no repeat</h2>
+             <div class="backnorepeat">
+                <p>testing for no repeat for image</p>
+             </div>
+<hr>
+             <!--BACKGROUND REPEAT X -->
+             <h2>testing background repeat x</h2>
+             <div class="backrxy">
+                <p>testing for repeat on x axis</p>
+             </div>
+<hr>
+             <!-- BACKGROUND SPACE -->
+              <h2>testing background space</h2>
+              <div class="backspace">
+                <p>testing for background space</p>
+              </div>
+<hr>
+              <!-- BACKGROUND ROUND -->
+               <h2>testing background round</h2>
+               <div class="backround">
+                <p>test for bacground image round</p>
+               </div>
+<hr>
+               <!--BACKGROUND POSITION  -->
+               <h1>BACKGROUND POSITION</h1>
+               <h2>center</h2>
+               <div class="backcenter">
+               </div>
+</body>
+</html>
