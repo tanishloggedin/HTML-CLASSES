@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html {
+            box-sizing: unset;
+        }
+        .modelbox {
+            height: 250px;
+            min-height: 200px;
+            width: 250px;
+            min-width: 100px;
+            box-sizing: border-box;
+            /* padding for inner area */
+            padding: 40px;
+            /* margin for outer area */
+            margin: 49px;
+            border: 5px solid rgb(221, 23, 26);
+            border-style: groove;
+            border-radius: 10px;
+            background-color: rgb(39, 200, 71);
+        }
+
+        .modelbox p {
+            color: aliceblue;
+        }
+
+        .modelboxx {
+            min-height: 250px;
+            min-height: 200px;
+            width: 350px;
+            min-width: 100px;
+            box-sizing: border-box;
+            padding: 40px;
+            margin: auto;
+            border: 9px solid blue;
+            border-style: groove;
+            border-radius: 20px;
+            background-color: rgb(105, 115, 38);
+            padding: 10px;
+        }
+
+        .modelboxx p {
+            color: aliceblue;
+        }
+
+        .modelboxsizing p{
+           
+            height: 200px;
+            width: 300px;
+            padding: 40px;
+            border: 10px solid grey;
+            background-color: blue;
+            box-sizing: content-box;
+        }
+        .modelboxsizing p {
+            color: white;
+        }
+
+        .borderbox {
+            height: 200px;
+            width: 300px;
+            padding: 10px;
+            background-color: blanchedalmond;
+            border: 10px solid grey;
+            box-sizing: border-box;
+        }
+
+        .parentbox {
+            width: 200px;
+            background-color: bisque;
+            padding: 20px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .childbox {
+            width: 100px;
+            background-color: aqua;
+            color: red;
+            padding: 15px;
+        }
+
+        .initialbox {
+            width: 200px;
+            height: 200px;
+            border: 6px solid maroon;
+            background-color: violet;
+            box-sizing: initial;
+        }
+
+        .unsetboxparent {
+            height: 370px;
+            width: 280px;
+            background-color: chartreuse;
+            border: 12px solid coral;
+            box-sizing: border-box;
+
+        }
+
+        .unsetboxchild {
+            height: 200px;
+            padding: 10px;
+            margin: 30px;
+            width: 200px;
+            background-color: bisque;
+            border: 3px solid black;
+
+        }
+    </style>
+    <!-- BOX MODEL -->
+     <h2>CONTENT</h2>
+     <div class="modelbox">
+        <p>this is a model box's content.</p>
+     </div>
+
+     <div class="modelboxx">
+        <p>this is the second model box's content </p>
+     </div>
+<hr>
+<h2>CONTENT BOX EXAMPLE</h2>
+<!-- INLCUDES PADDING AND  -->
+     <div class="modelboxsizing">
+        <p>this is the content for the model box that will be used in sizing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus deserunt ratione dolor laudantium voluptatibus repudiandae, impedit provident. Odio dicta perferendis quasi repudiandae nihil id perspiciatis voluptatum quae unde! Sapiente.</p>
+     </div>
+<hr>
+<h2>BORDER BOX EXAMPLE</h2>
+     <!-- border box -->
+      <div class="borderbox">
+        <p>this is the content for the model box that will be used in sizing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus deserunt ratione dolor laudantium voluptatibus repudiandae, impedit provident. Odio dicta perferendis quasi repudiandae nihil id perspiciatis voluptatum quae unde! Sapiente.</p>
+      </div>
+<hr>
+<h2>INHERIT</h2>
+<div class="parentbox">
+    <p>this is a parent box content></p>
+<div class="childbox">
+    <p>this is a child box content</p>
+</div>
+</div>
+<HR>
+<!-- INITIAL BOX EXAMPLE -->
+<h2>INITIAL BOX SIZING EXAMPLE</h2>
+<div class="initialbox">
+    <p>THIS IS AN EXAMPLE OF AN INITIAL BOX SIZING.</p>
+</div>
+<hr>
+<!-- UNSET EXAMPLE -->
+ <h2>UNSET BOX SIZING EXAMPLE</h2>
+ <div class="unsetboxparent">
+ <p>THIS IS AN EXAMPLE OF UNSET BOX SIZING.</p>
+ <div class="unsetboxchild">
+    <p>THIS IS AN EXAMPLE OF CHILD UNSET BOX SIZING</p>
+ </div>
+ </div>
+</body>
+</html>

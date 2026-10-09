@@ -130,6 +130,219 @@
             font-size: 3vh;
             font-size: 3vw;
         }
+
+        /* TEXT ALIGNMENT */
+        .left p {
+            text-align: left;
+        }   
+
+        .center p {
+            text-align: center;
+        }
+
+        .right p {
+            text-align: right;
+        }
+
+        .justify p {
+            text-align: justify;
+        }
+
+        .start p {
+            text-align: start;
+        }
+
+        .end p {
+            text-align: end;
+        }
+
+        /* TEXT DECORATION */
+        .underline p {
+            text-decoration: underline;
+        }
+        .overline p {
+            text-decoration: overline;
+        }
+        .linethrough p {
+            text-decoration: line-through;
+        }
+        .underline_overline p {
+            text-decoration: underline overline;
+        }
+        .underline_dotted p {
+            text-decoration: underline dotted;
+        }
+        .underline_dashed p {
+            text-decoration: underline dashed;
+        }
+        .underline_wavy p {
+            text-decoration: underline wavy;
+        }
+        .underline_double p {
+            text-decoration: underline double;
+        }
+
+        /* TEXT INDENTATION */
+        .indentpx p {
+            text-indent: 40px;
+        }
+        
+        .indentpercent p {
+            text-indent: 40%;
+        }
+
+        .indentnegative p {
+            text-indent: -40px;
+        }
+
+        .letterspacing p{
+            letter-spacing: 7px;
+        }
+
+        .tightspacing p{
+            letter-spacing: -3px;
+        }
+
+        .wordspacingpx p{
+            word-spacing: 20px;
+        }
+
+        .wordspacingnegative p{
+            word-spacing: -7px;
+        }
+
+        .lineheight p{
+            line-height: 2.5;
+        }
+
+        .lineheightpx p{
+            line-height: 3em;
+        }
+
+        .lineheightpercent p{
+            line-height: 250%;
+        }
+
+        .nowrap p{
+            white-space: nowrap;
+        }
+
+        .pre p{
+            white-space: pre;
+        }
+
+        .prewrap p{
+            white-space: pre-wrap;
+        }
+
+        .preline p{
+            white-space: pre-line;
+        }
+
+        .breakspaces p{
+            white-space: break-spaces;
+        }
+
+        /* DIRECTION */ 
+        .direction p{
+            direction: rtl;
+        }
+        /* TEXT SHADOW */
+        .textshadow p{
+            text-shadow:  2px 2px 9px red;
+        }
+
+        .multipleshadows p{
+            text-shadow:  2px 2px 9px rgb(32, 255, 51), 4px 4px 9px rgb(238, 255, 6), -10px 10px 9px rgb(228, 10, 46);
+        }
+        /* TEXT OVERFLOW */
+        .textclip p{
+            text-overflow: clip;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .textellipsis p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        /* WRITING MODE */
+        .verticalrl p{
+            writing-mode: vertical-rl;
+        }
+
+        .verticallr p{
+            writing-mode: vertical-lr;
+        }
+
+        .sidewaysrl p{
+            writing-mode: sideways-rl;
+        }
+
+        .sidewayslr p{
+            writing-mode: sideways-lr;
+        }
+
+        /* OVERFLOW WRAP */
+
+        .wrapbox {
+            width: 1000px;
+            height: 100%;
+            border: 1px solid black;
+            padding: 10px;
+            overflow-wrap: break-word;
+        }
+
+        .wrapbox1 {
+            width: 700px;
+            height: 250px;
+            border: 1px solid black;
+            padding: 10px;
+            overflow-wrap:  anywhere;
+        }
+
+        /* HYPHENS  */
+
+        .manualhyphens {
+            hyphens: manual;
+            width: 700px;
+            height: 250px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .autohyphens {
+            hyphens: auto;
+            width: 700px;
+            height: 250px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* TAB SIZE  */
+
+        .tabsize pre {
+            tab-size: 2;
+        }
+
+        /* QUOTE TAGS */
+        .doublequote q {
+            quotes: '“' '”';
+        }
+
+        .singlecurly q {
+            quotes: '‘' '’';
+        }
+
+        .frenchquote  q {
+            quotes: '«' '»';
+        }
+
+        .customquote q {
+            quotes: '‹' '›' '«' '»';
+        }
     </style>
 
 <!-- ABSOLUTE (px) -->
@@ -190,14 +403,17 @@
  <h2><u>ITALIC</u></h2>
  <div class="italic">
     <p>This is a italic text </p>
+ </div>
 
     <h2><u>NORMAL</u></h2>
     <div class="normal">
         <p>This is a normal text </p>
+    </div>
 
     <h2><u>OBLIQUE</u></h2>
     <div class="oblique">   
         <p>This is a oblique text </p>
+    </div>
 <hr>
 
 
@@ -254,7 +470,245 @@
     <h2><u>SMALL CAPS</u></h2>
     <div class="smallcaps">
         <p>This is a small caps text </p></div>
-        
+<hr>
+
+<h1>TEXT ALIGNMENT</h1>
+
+<div class="left">
+    <p>This is a left-aligned text </p>
+</div>
+
+<div class="center">
+    <p>This is a center-aligned text </p>
+</div>
+
+<div class="right">
+    <p>This is a right-aligned text </p>
+</div>
+
+<div class="justify">
+    <p>This is a justify-aligned text </p>
+</div>
+
+<div class="start">
+    <p>This is a start-aligned text to signify the beginning of the text alligns from the start </p>
+</div>
+
+<div class="end">
+    <p>This is a end-aligned text to signify the end of the text alligns from the end </p>
+</div>
+<hr>
+
+<!-- TEXT DECORATION -->
+ <h2><u>UNDERLINE</u></h2>
+ <div class="underline">
+    <p>This is a underline text </p></div>
+
+    <h2><u>OVERLINE</u></h2>
+    <div class="overline">
+        <p>This is a overline text </p></div>
+
+    <h2><u>LINE-THROUGH</u></h2>
+    <div class="linethrough">
+        <p>This is a line-through text </p></div>
+
+    <h2><u>UNDERLINE AND OVERLINE</u></h2>
+    <div class="underline_overline">
+        <p>This is a underline-overline text </p></div>
+    <h2>underline dotted</h2>
+    <div class="underline_dotted">
+        <p>This is a underline-dotted text </p></div>
+    <h2>underline dashed</h2>
+    <div class="underline_dashed">
+        <p>This is a underline-dashed text </p></div>
+    <h2>underline wavy</h2>
+    <div class="underline_wavy">
+        <p>This is a underline-wavy text </p></div>
+    <h2>underline double</h2>
+    <div class="underline_double">
+        <p>This is a underline-double text </p></div>
+<hr>
+
+<!-- TEXT INDENTATION -->
+ <h2>TEXT INDENTATION</h2>
+ <div class="indentpx">
+    <p>This is a text with indentation. The first line of this paragraph is indented to create a visual separation from the rest of the text. Indentation can be used to signify the beginning of a new section or to improve readability.</p>
+ </div>
+
+ <div class="indentpercent">
+    <p>This is another paragraph with indentation. The indentation helps to create a clear structure in the text, making it easier for readers to follow the content. Proper use of indentation can enhance the overall presentation of written material.</p>
+ </div>
+
+ <div class="indentnegative">
+    <p>This is a third paragraph with indentation. Indentation is a common typographic technique used in various forms of writing, including essays, articles, and books. It provides a visual cue to the reader that a new thought or idea is being introduced.</p>
+</div>
+<hr>
+
+<!-- LETTER SPACING -->
+ <h2>LETTER SPACING</h2>
+<div class="letterspacing">
+    <p>This is a text with letter spacing. Letter spacing, also known as tracking, refers to the amount of space between characters in a piece of text. Adjusting letter spacing can affect the readability and aesthetic appeal of the text.</p>
+</div>
+
+<div class="tightspacing">
+    <p>Proper letter spacing can enhance the overall design of a document or webpage. It can be used to create emphasis, improve legibility, and contribute to the visual hierarchy of the content. Designers often experiment with letter spacing to achieve the desired effect in their typography.</p>
+</div>
+<hr>
+
+<!-- WORD SPACING -->
+ <h2>WORD SPACING</h2>
+<div class="wordspacingpx">
+    <p>This is a text with word spacing. Word spacing refers to the amount of space between words in a line of text. Adjusting word spacing can improve readability and the overall appearance of the text.</p>
+</div>
+
+<div class="wordspacingnegative">
+    <p>Proper word spacing can enhance the flow of the text and make it easier for readers to comprehend the content. It is an important aspect of typography that designers consider when creating visually appealing and readable documents or webpages.</p>
+</div>
+<hr>
+
+<!-- LINE HEIGHT -->
+ <h2>LINE HEIGHT</h2>
+ <div class="lineheight">
+    <p>This is a text with line height. Line height, also known as leading, refers to the vertical space between lines of text. Adjusting line height can improve readability and the overall appearance of the text.</p>
+ </div>
+<h2>LINE HEIGHT (px)</h2>
+ <div class="lineheightpx">
+    <p>Proper line height can enhance the flow of the text and make it easier for readers to follow along. It is an important aspect of typography that designers consider when creating visually appealing and readable documents or webpages.</p>
+</div>
+
+<h2>LINE HEIGHT PERCENTAGE</h2>
+ <div class="lineheightpercent">
+    <p>Line height can be specified in various units, including pixels (px), ems (em), and percentages (%). Each unit has its own advantages and can be used to achieve different visual effects in typography. Designers often experiment with line height to find the optimal spacing for their text.</p>
+</div>
+<hr>
+
+<!-- WHITE SPACE -->
+ <h2>NO WRAP</h2>
+ <div class="nowrap">
+    <p>This is a text with no wrap. The text will not wrap to the next line, and it will continue on the same line until it reaches the end of the container. This can be useful for creating horizontal scrolling effects or for displaying long strings of text without breaking them into multiple lines.</p>
+</div>
+
+<h2>pre</h2>
+ <div class="pre">
+    <p>This is a text with pre formatting. The text will preserve both spaces and line breaks as they are written in the HTML code. This can be useful for displaying code snippets or other content where the exact formatting is important.</p>
+</div>
+<h2>pre-wrap</h2>
+<div class="prewrap">
+<p> This is a text with pre-wrap formatting. The text will wrap to the next line when it reaches the end of the container, but it will preserve line breaks as they are written in the HTML code. This can be useful for displaying code snippets or other content where the exact formatting is important.</p>
+</div>
+
+<h2>pre-line</h2>
+<div class="preline">
+<p> This is a text with pre-line formatting. The text will wrap to the next line when it reaches the end of the container, and it will also preserve line breaks as they are written in the HTML code. This can be useful for displaying code snippets or other content where the exact formatting is important.</p>
+</div>
+
+<h2>BREAK SPACES</h2>
+<div class="breakspaces">
+    <p>This is a text with break spaces. The text will break at spaces, allowing it to wrap to the next line when it reaches the end of the container. This can be useful for creating responsive designs and ensuring that text remains readable on different screen sizes.</p>
+</div>
+<hr>
+
+<!-- TEXT DIRECTION -->
+    <h2>TEXT DIRECTION</h2>
+<div class="direction">
+   <h2>Text Direction</h2>
+   <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. In totam sequi minus minima est dolore sapiente accusamus! Velit, illo ab. Perferendis, error aliquam cumque quae esse veniam consectetur ducimus in.</p>
+</div>
+<hr>
+
+<!-- TEXT SHADOW -->
+<h2>TEXT SHADOW</h2>
+<div class="textshadow">
+    <p>This is a text with shadow.</p>
+</div>
+
+<h2>MULTIPLE SHADOWS</h2>
+<div class="multipleshadows">
+    <p>This is a text with multiple shadows.</p>
+</div>
+<hr>
+
+<!-- TEXT OVERFLOW -->
+<h2>TEXT CLIP</h2>
+<div class="textclip">
+    <p>This is a text with clip. The text will be clipped and not displayed when it exceeds the width of the container. This can be useful for creating visual effects or for hiding overflow content in a limited space.</p>
+</div>
+
+ <h2>TEXT ELLIPSIS</h2>
+ <div class="textellipsis">
+    <p>This is a text with ellipsis. The text will be truncated with an ellipsis when it exceeds the width of the container. This can be useful for displaying long strings of text in a limited space, such as in a card or a list item.</p>
+ </div>
+<hr>
+
+ <!-- WRITING MODE -->
+  <h2>VERTICAL-RL</h2>
+  <div class="verticalrl">
+    <p>This is a text with writing mode. The writing mode property allows you to control the direction in which text is displayed, such as horizontal or vertical. This can be useful for creating unique layouts and designs, especially in languages that are traditionally written vertically.</p>
+  </div>
+
+  <h2>VERTICAL-LR</h2>
+    <div class="verticallr">
+    <p>This is a text with vertical-lr writing mode. The text will be displayed vertically from top to bottom, and the lines will flow from left to right. This can be useful for creating unique layouts and designs, especially in languages that are traditionally written vertically.</p>
+    </div>
+
+    <h2>SIDEWAYS-RL</h2>
+    <div class="sidewaysrl">
+    <p>This is a text with sideways-rl writing mode. The text will be displayed sideways from top to bottom, and the lines will flow from right to left. This can be useful for creating unique layouts and designs, especially in languages that are traditionally written vertically.</p>
+    </div>
+
+    <h2>SIDEWAYS-LR</h2>
+    <div class="sidewayslr">
+    <p>This is a text with sideways-lr writing mode. The text will be displayed sideways from top to bottom, and the lines will flow from left to right. This can be useful for creating unique layouts and designs, especially in languages that are traditionally written vertically.</p>
+    </div>
+<hr>
+<h2>OVERFLOW WRAP (BREAK-WORD)</h2>
+<div class="wrapbox">
+    <p>This is a text with overflow wrap. The overflow-wrap property allows you to control how text behaves when it exceeds the width of its container. By using overflow-wrap, you can ensure that long words or strings of text will break and wrap onto the next line, improving readability and preventing horizontal scrolling.</p>
+</div>
+
+<h2>OVERFLOW WRAP (ANYWHERE)</h2>
+<div class="wrapbox1">
+    <p>This is a text with overflow wrap. The overflow-wrap property allows you to control how text behaves when it exceeds the width of its container. By using overflow-wrap, you can ensure that long words or strings of text will break and wrap onto the next line, improving readability and preventing horizontal scrolling.</p>
+</div>
+<hr>
+
+<!-- HYPHENS -->
+ <h2>HYPHENS (MANUAL)</h2>
+ <div class="manualhyphens">
+    <p>This is a text with manual hyphens. The hyphens propert-y allows you to contro-l how words are hyphenated when they exceed the width of their container. By using manual hyphens, you can specify where hyphenation should occur, improving readability and preventing awkward line breaks.</p>
+ </div>
+
+ <h2>HYPHENS (AUTO)</h2>
+ <div class="autohyphens">
+    <p>This is a text with auto hyphens. The hyphens property allows you to control how words are hyphenated when they exceed the width of their container. By using auto hyphens, the browser will automatically determine where hyphenation should occur based on language rules, improving readability and preventing awkward line breaks.</p>
+    </div>
+
+<hr>
+    <!-- TAB SIZE -->
+     <h2>TAB SIZE</h2>
+     <div class="tabsize">
+     <pre>print("Hello, World!")
+            print("HOW ARE YOU?")
+            print("I AM DOING FINE!")</pre>
+     </div>
+
+     <!-- QUOTE TAG -->
+        <h2>DOUBLE QUOTE TAG</h2>
+        <div class="doublequote">
+            <q>This is a text with double quote tag.</q>
+        </div>
+
+        <h2>SINGLE CURLY QUOTE</h2>
+        <div class="singlecurly">
+            <q>this is a text with single curly quote.</q>
+        </div>
+
+        <h2>FRENCH QUOTE</h2>
+        <div class="frenchquote">
+            <q>TEXT WITH FRENCH QUOTE TAGS</q>
+        </div>
+
+        <h2>CUSTOM QUOTE</h2>
         
 </body>
 </html>
