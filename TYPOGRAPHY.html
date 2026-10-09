@@ -343,6 +343,16 @@
         .customquote q {
             quotes: '‹' '›' '«' '»';
         }
+
+        /* UNICODE BIDI */
+
+        .unicodeembed p{
+            unicode-bidi: embed;
+        }
+
+        .unicodeoverride p{
+            unicode-bidi: bidi-override;
+        }
     </style>
 
 <!-- ABSOLUTE (px) -->
@@ -709,6 +719,27 @@
         </div>
 
         <h2>CUSTOM QUOTE</h2>
-        
+        <div class="customquote">
+            <q>This is a text with custom quote.</q>
+        </div>
+
+<hr>
+<!-- UNICODE BIDI -->
+
+<h2>EMBED</h2>
+<div class="unicodeembed">
+    <p> hello world <br>
+        ہیلو دنیا
+</p>
+</div>
+
+<h2>bidi override</h2>
+<div class="unicodeoverride">
+    <p> hello world <br>
+        ہیلو دنیا
+</p>
+</div>
+
+
 </body>
 </html>
