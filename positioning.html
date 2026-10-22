@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* STATIC */
+    .static {
+        height: 150px;
+        width: 150px;
+        padding: 70px;
+        background: blue;
+        border: 7px solid red;
+        position: static;
+    }
+
+ .relative {
+        height: 150px;
+        width: 150px;
+        padding: 70px;
+        background: blue;
+        border: 7px solid red;
+        position: relative;
+        left:300px;
+        top: 50px;
+    }
+
+     .absolute {
+        height: 150px;
+        width: 150px;
+        padding: 70px;
+        background: rgb(43, 255, 0);
+        border: 7px solid rgb(0, 251, 255);
+    
+    }
+
+
+     .fixed {
+        height: 150px;
+        width: 150px;
+        padding: 70px;
+        background: rgb(255, 0, 225);
+        border: 7px solid rgb(218, 236, 17);
+        position: fixed;
+        left: 400px;
+        bottom: 0;
+    }
+
+     .sticky {
+        height: 150px;
+        width: 150px;
+        padding: 70px;
+        background: blue;
+        border: 7px solid red;
+        position: sticky;
+        top: 0;
+        right: 0;
+        
+    }
+
+    body {
+        height: 3000px;
+    }
+</style>
+<body>
+    <h1>POSITIONING</h1>
+    <hr>
+    <!-- STATIC -->
+     <h2>STATIC</h2>
+     <div class="static">
+     </div>
+<hr>
+     <h2>RELATIVE</h2>
+     <div class="relative">
+     </div>
+<hr>
+     <h2>ABOSLUTE</h2>
+     <div class="absolute">
+     </div>
+<hr>
+     <h2>FIXED</h2>
+     <div class="fixed">
+     </div>
+<hr>
+     <h2>STICKY</h2>
+     <div class="sticky">
+     </div>
+<hr>
+</body>
+</html>
