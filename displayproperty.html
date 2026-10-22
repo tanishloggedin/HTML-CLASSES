@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* BLOCK */
+        .block {
+            border: 4px solid black;
+            background-color: aqua;
+            display: block;
+        }
+        .blockk {
+             border: 4px solid black;
+             background-color: aqua;
+            display: block;
+        }
+
+         /* INLINE */
+         .inline {
+            border: 3px solid black;
+            background: burlywood;
+            padding: 10px;
+            margin: 5px;
+            display: inline;
+            }
+        
+
+         /* INLINE BLOCK */
+         .inlineb {
+            display: inline-block;
+            border: 4px solid green;
+            background: grey;
+            padding: 10px;
+            margin: 4px;
+         }
+
+         .inlinebb {
+             display: inline-block;
+            border: 4px solid green;
+            background: grey;
+            padding: 10px;
+            margin: 4px;
+         }
+
+         .inlinebbb {
+             display: inline-block;
+            border: 4px solid green;
+            background: grey;
+            padding: 10px;
+            margin: 4px;
+         }
+
+         /* NONE */
+         .none {
+            display: none;
+         }
+
+         /* FLEX */
+         .container {
+            display: flex;
+            background: lightseagreen;
+            border: 4px solid grey; 
+            padding: 10px;
+            gap: 10px;
+         }
+        .item {
+            border: 2px solid white;
+            background: lightcoral;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+         
+
+         /* GRID */
+         .containergrid {
+            display: grid;
+            border: 4px solid rgb(218, 186, 27);
+            background: rgb(11, 197, 225);
+            padding: 10px;
+            margin: 4px;
+         }
+
+         .classgrid {
+            border: 2px solid rgb(17, 216, 47);
+            background: rgba(203, 36, 219, 0.453);
+            padding: 20px;
+            border-radius: 5px;
+         }
+    </style>
+</head>
+<body>
+    <!-- DISPLAY PROPERTY -->
+     <h2>Block</h2>
+     <div class="block">
+        <p>this is by default present in some tags</p>
+     </div>
+
+      <div class="blockk">
+            <p>this is an example of it</p>
+        </div>
+<hr>
+
+        <!-- INCLINE -->
+         <h2>INCLINE</h2>
+         <span class="inline">inline 1</span>
+         <span class="inline">inline 2</span>
+         <span class="inline">inline 3</span>
+
+<hr>
+        <!-- INLINE BLOCK -->
+         <h2>INLINE BLOCK</h2>
+         <div class="inlineb">box1</div>
+         <div class="inlinebb">box2</div>
+         <div class="inlinebbb">box3</div>
+<hr>
+        <!-- NONE -->
+         <h2>NONE</h2>
+         <p class="none">
+            yeh paragraph hidden hai
+         </p>
+         <p>Upar wala code invisible hai using</p>
+         <code>display: none;</code>
+
+<hr>
+         <!-- FLEX -->
+          <h2>FLEX</h2>
+          <div class="container">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+          </div>
+<hr>
+          <!-- GRID -->
+           <div class="containergrid">
+
+            <div class="classgrid">grid item 1</div>
+            <div class="classgrid">grid item 2</div>
+            <div class="classgrid">grid item 3</div>
+            <div class="classgrid">grid item 4</div>
+           </div>
+</body>
+</html>
