@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .static {
+        width: 150px;
+        height: 150px;
+        padding: 70px;
+        border: 4px solid black;
+        background-image: url("https://imgs.search.brave.com/F3_l0a0gVAdh1jsZmy9QCe8wHyohuhduMU3-jQgipLo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMud2JtLmltL3B3/L3NtYWxsLzZmMmY0/NmVlN2Y1ZDY4OTNl/NDgyNDFjNmMyZDZm/YTVkLnBuZw");
+        background-position: center;
+        position: static;
+    }
+
+     .relative {
+        width: 150px;
+        height: 150px;
+        padding: 70px;
+        border: 4px solid black;
+        background-image: url("https://imgs.search.brave.com/hjEIBQ4xHNNLuUQpaBqbQzoXmNhOe6JDvgAsanay2yQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMud2JtLmltL3B3/L3NtYWxsL2U3M2E5/NWM4NzYyMDVkYjI3/YTQwYjE4OGJkMzBh/YmJiLnBuZw");
+        background-position: center;
+        position: relative;
+        left: 0;
+        
+    }
+
+    .absolute{
+         width: 50px;
+        height: 50px;
+        padding: 70px;
+        border: 4px solid black;
+        background-image: url("https://imgs.search.brave.com/hjEIBQ4xHNNLuUQpaBqbQzoXmNhOe6JDvgAsanay2yQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMud2JtLmltL3B3/L3NtYWxsL2U3M2E5/NWM4NzYyMDVkYjI3/YTQwYjE4OGJkMzBh/YmJiLnBuZw");
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .fixed {
+        width: 150px;
+        height: 150px;
+        padding: 70px;
+        border: 4px solid black;
+        background-image: linear-gradient(black,red,blue,grey);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .sticky{
+        width: 150px;
+        height: 150px;
+        padding: 70px;
+        border: 4px solid black;
+        background-image: url("https://imgs.search.brave.com/LLJ1OAgei0hcbpeMVJ821OcPiBuBA2CmKM_hS1rqtCI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vY29sb3JmdWwt/YmFja2dyb3VuZC13/aXRoLWNvbG9yZWQt/c3F1YXJlcy1jb2xv/cmZ1bC1iYWNrZ3Jv/dW5kXzk0MzI4MS0x/MDAzMDguanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw");
+        background-position: center;
+        position: sticky;
+        right: 0;
+        top: 0;
+    }
+
+    body {
+        height: 3000px;
+    }
+
+</style>
+<body>
+    <h1>POSITIONING</h1>
+<hr>
+    <h2>static</h2>
+    <div class="static"></div>
+<hr>
+
+    <h2>relative (parent) absolute (child)</h2>
+    <div class="relative">
+        <div class="absolute">
+        </div>
+    </div>
+<hr>
+
+    <h2>fixed</h2>
+    <div class="fixed"></div>
+<hr>
+
+    <h2>sticky</h2>
+    <div class="sticky"></div>
+<hr>
+</body>
+</html>
