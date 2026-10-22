@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        gap: 20px;
+        flex-direction: row; 
+                        /* ROW REVERSE, COLOUMN, COLOUMN REVERSE */
+    }
+
+   .box1 {
+    height: 150px;
+    width: 150px;
+    border: 4px sold black;
+    background-color: red;
+   }
+
+   .container2 {
+    gap: 25px;
+    border: 7px solid black;
+     flex-wrap: wrap;
+     /* NOWRAP - PUTS IN STRAIGHT LINE  */
+     display: flex;
+     width: 400px;
+   }
+
+   .box2 {
+     height: 150px;
+    width: 150px;
+    border: 4px sold rgb(7, 226, 69);
+    background-color: rgb(24, 18, 214);
+   }
+
+   .container3 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border: 7px solid red;
+    width: 400px;
+    gap: 20px;
+   }
+
+   .box3 {
+     height: 150px;
+    width: 150px;
+    border: 4px sold rgb(225, 200, 10);
+    background-color: rgb(255, 23, 255);
+   }
+
+   .container4 {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    border: 7px solid black;
+   }
+
+    .box4 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(141, 122, 245);
+    background-color: rgb(167, 14, 14);
+    }
+    
+    .container5 {
+    display: flex;
+    gap: 20px;
+    flex-flow: column wrap;
+    border: 7px solid black;
+    width: 400px;
+    
+   }
+
+    .box6 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(218, 204, 78);
+    }   
+    /* DO SAME FOR REVERSE */
+
+    /* JUSTIFY CONTENT */
+
+     .container6 {
+    display: flex;
+    justify-content: flex-start;
+    border: 7px solid black;
+   }
+
+    .box6 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(32, 166, 224);
+    background-color: rgb(225, 107, 10);
+    }   
+
+    /* JUSTIFY CONTENT FLEX END */
+
+     .container7 {
+    display: flex;
+    justify-content: flex-end;
+    border: 7px solid black;
+   }
+
+    .box7 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(224, 32, 214);
+    background-color: rgb(39, 225, 10);
+    }
+    
+    /* JUSTIFY CONTENT CENTER */
+
+    .container8 {
+    display: flex;
+    justify-content: center;
+    border: 7px solid black;
+   }
+
+    .box8 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(62, 64, 63);
+    background-color: rgb(97, 97, 97);
+    }
+
+    /* JUSTIFY CONTENT SPACE BETWEEN */
+
+    .container9 {
+    display: flex;
+    justify-content: space-between;
+    border: 7px solid black;
+   }
+
+    .box9 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(62, 64, 63);
+    background-color: rgb(97, 97, 97);
+    }
+
+    /* JUSTIFY CONTENT SPACE AROUND */
+      .container10 {
+    display: flex;
+    justify-content: space-around;
+    border: 7px solid black;
+   }
+
+    .box10 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(62, 64, 63);
+    background-color: rgb(97, 97, 97);
+    }
+
+      /* JUSTIFY CONTENT SPACE EVENLY */
+      .container11 {
+    display: flex;
+    justify-content: space-evenly;
+    border: 7px solid black;
+   }
+
+    .box11 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(62, 64, 63);
+    background-color: rgb(97, 97, 97);
+    }
+
+     /* ALLIGN ITEMS */
+      .container12 {
+    display: flex;
+    align-items: stretch;
+    border: 7px solid black;
+    height: 200px;
+    width: 700px;
+   }
+
+    .box12 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(165, 11, 225);
+    background-color: rgb(236, 232, 17);
+    }
+
+      /* ALIGN ITEMS flex start */
+      .container13 {
+    display: flex;
+    align-items: flex-start;
+    border: 7px solid black;
+    height: 200px;
+    width: 800px;
+   }
+
+    .box13 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(165, 11, 225);
+    background-color: rgb(236, 232, 17);
+    }
+
+      /* ALIGN ITEMS flex end */
+      .container14 {
+    display: flex;
+    align-items: flex-end;
+    border: 7px solid black;
+    height: 200px;
+    width: 700px;
+   }
+
+    .box14 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(165, 11, 225);
+    background-color: rgb(236, 232, 17);
+    }
+
+      /* ALIGN ITEMS center */
+      .container15 {
+    display: flex;
+    align-items: center;
+    border: 7px solid black;
+    height: 200px;
+    width: 700px;
+   }
+
+    .box15 {
+     height: 150px;
+    width: 150px;
+    border: 12px sold rgb(165, 11, 225);
+    background-color: rgb(236, 232, 17);
+    }
+
+      /* ALIGN ITEMS baseline */
+      .container16 {
+    display: flex;
+    align-items: baseline;
+    border: 7px solid black;
+    height: 300px;
+    width: 900px;
+    gap: 20px;
+    text-align: center;
+   }
+
+    .box16a {
+     height: 150px;
+    width: 150px;
+   background-color: rgb(236, 232, 17);
+   font-size: x-small;
+    }
+
+      .box16b {
+     height: 150px;
+    width: 150px;
+   background-color: rgb(236, 232, 17);
+   font-size: larger;
+    }
+
+      .box16c {
+     height: 150px;
+    width: 150px;
+   background-color: rgb(236, 232, 17);
+   font-size: medium;
+    }
+
+      .box16d {
+     height: 150px;
+    width: 150px;
+   background-color: rgb(236, 232, 17);
+   font-size: xx-small;
+    }
+
+      .box16e {
+     height: 150px;
+    width: 150px;
+   background-color: rgb(236, 232, 17);
+   font-size: x-large;
+    }
+
+    /*  ROW GAP */
+
+    .container17 {
+        display: flex;
+    flex-direction: row;
+    border: 7px solid black;
+    row-gap: 20px;
+    width: 500px;
+    flex-wrap: wrap;
+    }
+
+     .box17 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(127, 218, 78);
+    }   
+
+     .container18 {
+        display: flex;
+    flex-direction: row;
+    border: 7px solid black;
+    row-gap: 20%;
+    width: 500px;
+     flex-wrap: wrap;
+    }
+
+     .box18 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(127, 218, 78);
+    }   
+
+    .container19 {
+        display: flex;
+    flex-direction: row;
+    border: 7px solid black;
+    width: 500px;
+    row-gap: 2em;
+     flex-wrap: wrap;
+    }
+
+     .box19 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(94, 78, 218);
+    }   
+
+        /* COLUMN GAP */
+         
+        .container20 {
+    display: flex;
+    flex-direction: column;
+    border: 7px solid black;
+    column-gap: 40px;
+    height: 400px;
+    flex-wrap: wrap;
+    }
+
+     .box20 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(127, 218, 78);
+    }   
+
+     .container21 {
+        display: flex;
+    flex-direction: column;
+    border: 7px solid black;
+    column-gap: 20%;
+    height: 400px;
+     flex-wrap: wrap;
+    }
+
+     .box21 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(127, 218, 78);
+    }   
+
+    .container22 {
+        display: flex;
+    flex-direction: column;
+    border: 7px solid black;
+    width: 500px;
+    column-gap: 2em;
+    height: 400px;
+     flex-wrap: wrap;
+    }
+
+     .box22 {
+     height: 150px;
+    width: 150px;
+    border: 7px sold rgb(122, 245, 151);
+    background-color: rgb(94, 78, 218);
+    }  
+    
+    .navbar {
+    }
+</style>
+<body>
+
+      <header class="navbar">
+            <h1>NAVIGATION BAR</h1>
+            <ul>
+                <li>HOME</li>
+                <li>DISPLAY</li>
+                <li>FLEX WRAP</li>
+                <li>JUSTIFY CONTENT</li>
+                  <li>ALIGN ITEMS</li>
+                <li>ALIGN CONTENT</li>
+                  <li>GAP</li>
+                <li>ROW GAP</li>
+                <li>COLUMN GAP</li>
+            </ul>
+        </header>
+
+<hr>
+    <h1>FLEX PROPERTY</h1>
+    <hr>
+    <h2>FLEX DIRECTION</h2>
+    <div class="container">
+        <div class="box1"> <h1>box1</h1> </div>
+        <div class="box1"> <h1>box2</h1> </div>
+        <div class="box1"> <h1>box3</h1> </div>
+        <div class="box1"> <h1>box4</h1> </div>
+    </div>
+<hr>
+    <h1>FLEX WRAP</h1>
+    <div class="container2">
+        <div class="box2"> <h1>box6</h1> </div>
+        <div class="box2"> <h1>box6</h1> </div>
+        <div class="box2"> <h1>box7</h1> </div>
+        <div class="box2"> <h1>box8</h1> </div>
+         <div class="box2"> <h1>box9</h1> </div>
+          <div class="box2"> <h1>box10</h1> </div>
+           <div class="box2"> <h1>box11</h1> </div>
+           <div class="box2"> <h1>box12</h1> </div>
+    </div>
+<hr>
+<h1>FLEX WRAP REVERSE</h1>
+    <div class="container3">
+        <div class="box3">
+            <h1>box13</h1>
+        </div>
+        <div class="box3">
+            <h1>box14</h1>
+        </div>
+        <div class="box3">
+            <h1>box15</h1>
+        </div>
+        <div class="box3">
+            <h1>box16</h1>
+        </div>
+        <div class="box3">
+            <h1>box17</h1>
+        </div>
+        <div class="box3">
+            <h1>box18</h1>
+        </div>
+        <div class="box3">
+            <h1>box19</h1>
+        </div>
+        <div class="box3">
+            <h1>box20</h1>
+        </div>
+        </div>
+<hr><br>
+
+        <h1>FLEX-FLOW</h1>
+        <div class="container4">
+              <div class="box4">
+            <h1>box13</h1>
+        </div>
+        <div class="box4">
+            <h1>box14</h1>
+        </div>
+        <div class="box4">
+            <h1>box15</h1>
+        </div>
+        <div class="box4">
+            <h1>box16</h1>
+        </div>
+        <div class="box4"><h1>box17</h1>
+        </div>
+         <div class="box4">
+            <h1>box13</h1>
+        </div>
+        <div class="box4">
+            <h1>box14</h1>
+        </div>
+        <div class="box4">
+            <h1>box15</h1>
+        </div>
+        <div class="box4">
+            <h1>box16</h1>
+        </div>
+        <div class="box4">
+            <h1>box17</h1>    
+        </div>
+        </div>
+<hr>
+
+        <h1>COLUMN WRAP FLEX FLOW</h1>
+        <div class="container5">
+              <div class="box6">
+            <h1>box13</h1>
+        </div>
+        <div class="box6">
+            <h1>box14</h1>
+        </div>
+        <div class="box6">
+            <h1>box15</h1>
+        </div>
+        <div class="box6">
+            <h1>box16</h1>
+        </div>
+        <div class="box6"><h1>box17</h1>
+        </div>
+         <div class="box6">
+            <h1>box13</h1>
+        </div>
+        <div class="box6">
+            <h1>box14</h1>
+        </div>
+        <div class="box6">
+            <h1>box15</h1>
+        </div>
+        <div class="box6">
+            <h1>box16</h1>
+        </div>
+        <div class="box6">
+            <h1>box17</h1>    
+        </div>
+        </div>
+<hr>
+        <h1>JUSTIFY CONTENT FLEX START</h1>
+         <div class="container6">
+              <div class="box6">
+            <h1>box13</h1>
+        </div>
+        <div class="box6">
+            <h1>box14</h1>
+        </div>
+        <div class="box6">
+            <h1>box15</h1>
+        </div>
+        <div class="box6">
+            <h1>box16</h1>
+        </div>
+        <div class="box6"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+        <h1>JUSTIFY CONTENT FLEX END</h1>
+         <div class="container7">
+              <div class="box7">
+            <h1>box13</h1>
+        </div>
+        <div class="box7">
+            <h1>box14</h1>
+        </div>
+        <div class="box7">
+            <h1>box15</h1>
+        </div>
+        <div class="box7">
+            <h1>box16</h1>
+        </div>
+        <div class="box7"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+        <h1>JUSTIFY CONTENT CENTER</h1>
+         <div class="container8">
+              <div class="box8">
+            <h1>box13</h1>
+        </div>
+        <div class="box8">
+            <h1>box14</h1>
+        </div>
+        <div class="box8">
+            <h1>box15</h1>
+        </div>
+        <div class="box8">
+            <h1>box16</h1>
+        </div>
+        <div class="box8"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+         <h1>JUSTIFY CONTENT SPACE BETWEEN</h1>
+         <div class="container9">
+              <div class="box9">
+            <h1>box13</h1>
+        </div>
+        <div class="box9">
+            <h1>box14</h1>
+        </div>
+        <div class="box9">
+            <h1>box15</h1>
+        </div>
+        <div class="box9">
+            <h1>box16</h1>
+        </div>
+        <div class="box9"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+         <h1>JUSTIFY CONTENT SPACE AROUND</h1>
+         <div class="container10">
+              <div class="box10">
+            <h1>box13</h1>
+        </div>
+        <div class="box10">
+            <h1>box14</h1>
+        </div>
+        <div class="box10">
+            <h1>box15</h1>
+        </div>
+        <div class="box10">
+            <h1>box16</h1>
+        </div>
+        <div class="box10"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+         <h1>JUSTIFY CONTENT EVENLY</h1>
+         <div class="container11">
+              <div class="box11">
+            <h1>box13</h1>
+        </div>
+        <div class="box11">
+            <h1>box14</h1>
+        </div>
+        <div class="box11">
+            <h1>box15</h1>
+        </div>
+        <div class="box11">
+            <h1>box16</h1>
+        </div>
+        <div class="box11"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+<hr>
+        <h1>ALLIGN ITEMS</h1>
+        <h2>stretch</h2>
+         <div class="container12">
+              <div class="box12">
+            <h1>box13</h1>
+        </div>
+        <div class="box12">
+            <h1>box14</h1>
+        </div>
+        <div class="box12">
+            <h1>box15</h1>
+        </div>
+        <div class="box12">
+            <h1>box16</h1>
+        </div>
+        <div class="box12"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+        <h2>flex start</h2>
+         <div class="container13">
+              <div class="box13">
+            <h1>box13</h1>
+        </div>
+        <div class="box13">
+            <h1>box14</h1>
+        </div>
+        <div class="box13">
+            <h1>box15</h1>
+        </div>
+        <div class="box13">
+            <h1>box16</h1>
+        </div>
+        <div class="box13"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+        <h2>flex end</h2>
+         <div class="container14">
+              <div class="box14">
+            <h1>box13</h1>
+        </div>
+        <div class="box14">
+            <h1>box14</h1>
+        </div>
+        <div class="box14">
+            <h1>box15</h1>
+        </div>
+        <div class="box14">
+            <h1>box16</h1>
+        </div>
+        <div class="box14"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+
+        <h2>center</h2>
+         <div class="container15">
+              <div class="box15">
+            <h1>box13</h1>
+        </div>
+        <div class="box15">
+            <h1>box14</h1>
+        </div>
+        <div class="box15">
+            <h1>box15</h1>
+        </div>
+        <div class="box15">
+            <h1>box16</h1>
+        </div>
+        <div class="box15"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+          <h2>baseline</h2>
+         <div class="container16">
+              <div class="box16a">
+            <h1>box13</h1>
+        </div>
+        <div class="box16b">
+            <h1>box14</h1>
+        </div>
+        <div class="box16c">
+            <h1>box15</h1>
+        </div>
+        <div class="box16d">
+            <h1>box16</h1>
+        </div>
+        <div class="box16e"><h1>box17</h1>
+        </div>
+        </div>
+<hr>
+         <h1>ROW GAP</h1>
+        <h2>fixed pixels</h2>
+         <div class="container17">
+              <div class="box17">
+            <h1>box13</h1>
+        </div>
+        <div class="box17">
+            <h1>box14</h1>
+        </div>
+        <div class="box17">
+            <h1>box15</h1>
+        </div>
+        <div class="box17">
+            <h1>box16</h1>
+        </div>
+        <div class="box17"><h1>box17</h1>
+        </div>
+        </div>    
+<hr>
+         <h2>parent height ka percentage</h2>
+         <div class="container18">
+              <div class="box18">
+            <h1>box13</h1>
+        </div>
+        <div class="box18">
+            <h1>box14</h1>
+        </div>
+        <div class="box18">
+            <h1>box15</h1>
+        </div>
+        <div class="box18">
+            <h1>box16</h1>
+        </div>
+        <div class="box18"><h1>box17</h1>
+        </div>
+        </div>    
+<hr>
+         <h2>Font size ka multiple</h2>
+         <div class="container19">
+              <div class="box19">
+            <h1>box13</h1>
+        </div>
+        <div class="box19">
+            <h1>box14</h1>
+        </div>
+        <div class="box19">
+            <h1>box15</h1>
+        </div>
+        <div class="box19">
+            <h1>box16</h1>
+        </div>
+        <div class="box19"><h1>box17</h1>
+        </div>
+        </div>   
+<hr>
+        <h1>COLUMN GAP</h1>
+        <h2>FIXED PIXELS</h2>
+        <div class="container20">
+              <div class="box20">
+            <h1>box13</h1>
+        </div>
+        <div class="box20">
+            <h1>box14</h1>
+        </div>
+        <div class="box20">
+            <h1>box15</h1>
+        </div>
+        <div class="box20">
+            <h1>box16</h1>
+        </div>
+        <div class="box20"><h1>box17</h1>
+        </div>
+        </div>
+        <hr>   
+        <h2>parent width ka percentage</h2>
+        <div class="container21">
+              <div class="box21">
+            <h1>box13</h1>
+        </div>
+        <div class="box21">
+            <h1>box14</h1>
+        </div>
+        <div class="box21">
+            <h1>box15</h1>
+        </div>
+        <div class="box21">
+            <h1>box16</h1>
+        </div>
+        <div class="box21"><h1>box17</h1>
+        </div>
+        </div> 
+        <hr>  
+        <h2>font size ka multiple</h2>
+        <div class="container22">
+              <div class="box22">
+            <h1>box13</h1>
+        </div>
+        <div class="box22">
+            <h1>box14</h1>
+        </div>
+        <div class="box22">
+            <h1>box15</h1>
+        </div>
+        <div class="box22">
+            <h1>box16</h1>
+        </div>
+        <div class="box22"><h1>box17</h1>
+        </div>
+        </div> 
+    
+</body>
+</html>
