@@ -1,0 +1,112 @@
+@media(max-width: 600px){
+/* ONLY WORKS IF THE WIDTH IS AROUND 600PX */
+.maxwidth {
+    background: red;
+}
+}
+
+/* MIN WIDTH */
+@media(min-width: 1024px){
+/* ONLY WORKS IF THE WIDTH IS AROUND 1024PX 
+USED FOR TABLET DEVICES*/
+.minwidth {
+    background: lightgreen;
+}
+}
+
+/* CONDITIONS */
+
+/* AND OPERATOR */
+@media(min-width: 600px) and (max-width: 1024px) {
+/* BOTH CONDITIONS APPLIES */
+.AND {
+    background: yellow;
+}
+}
+
+/* OR OPERATOR */
+@media(min-width: 600px),(orientation: portrait) {
+/* IF ONE OR BOTH CONDITIONS ARE TRUE */
+.OR {
+    background: rgb(53, 115, 182);
+}
+}
+
+/* SCREEN ORIENTATION */
+
+/* POTRAIT */
+@media(orientation: portrait) {
+/* IF SCREEN IS VERTICLE */
+.potrait {
+    background: rgb(21, 206, 73);
+}
+}
+/* LANDSCAPE */
+@media(orientation: landscape) {
+/* IF SCREEN IS LANDSCAPE */
+.landscape {
+    background: rgb(206, 21, 203);
+}
+}
+
+/* HEIGHT */
+
+/* MIN HEIGHT */
+@media(min-height: 1000px) {
+/* IF HEIGHT IS GREATER OR EQUAL TO 600PX */
+.minheight {
+    background: rgb(214, 173, 9);
+}
+}
+/* MAX HEIGHT */
+@media(max-height: 800px) {
+/* IF HEIGHT IS LESS OR EQUAL TO 1600PX */
+.maxheight {
+    background: orange;
+}
+}
+
+/* SCREEN */
+@media screen {
+/* DEFAULT SCREEN */
+h3 {
+    background: chocolate;
+}
+}
+
+/* PRINT */
+@media print {
+/* ONLY SHOWS UP IN PRINT FORMAT */
+h3 {
+    background: rgb(234, 12, 12);
+}
+}
+
+/* NOT */
+@media not screen {
+/* DEFAULT SCREEN WILL NOT BE APPLIED */
+ .not{
+    background: rgb(189, 198, 21);
+}
+}
+
+/* ONLY */
+@media only screen and (max-width:600px) {
+ .only{
+    background:purple;
+}
+}
+
+/* POINTER */
+@media (pointer: coarse) {
+ input{
+    font-size: 30px;
+ }
+}
+
+/* ASPECT RATIO */
+@media (min-aspect-ratio: 16/9) {
+ .aspect{
+    background: grey;
+ }
+}
