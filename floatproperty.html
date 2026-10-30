@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* FLOAT LEFT */
+        .floatl {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            float: left;
+        }
+
+        .floatr {
+            width: 100px;
+            height: 50px;
+            background-color: skyblue;
+            float: right;
+        }
+
+        .floatnone {
+            width: 100px;
+            height: 50px;
+            background-color: grey;
+            float: none;
+            color: aliceblue;
+        }
+
+        /* CLEAR PROPERTY */
+        .floatcl {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            float: left;
+        }
+
+        .clearl {
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            clear: left;
+        }
+
+        .floatcr {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(12, 18, 195);
+            float: right;
+        }
+
+        .clearr {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(255, 0, 0);
+            clear: right;
+        }
+
+         .floatboth1 {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(246, 161, 13);
+            float: left;
+        }
+
+         .floatboth2 {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            float: right;
+            color: white;
+        }
+
+        .clearboth {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(15, 157, 117);
+            clear: both;
+        }
+
+        .floatcnone {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            float: left;
+            color: white;
+        }
+
+        .clearnone {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(131, 134, 24);
+            clear: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Z INDEX */
+
+        .zindex {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 0%;
+            z-index: +1;
+
+        }
+
+        .zindex1 {
+            background-color: rgb(255, 0, 0);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            right: 70%;
+            top: 220%;
+            text-align: end;
+        }
+
+        .zindex2 {
+          background-color: rgb(21, 255, 0);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            right: 80%;
+            top: 210%;
+            z-index: 0;
+             text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FLOAT PROPERTY</h1>
+    <hr>
+    <h2>FLOAT LEFT</h2>
+    <div class="floatl">
+        <p>float left</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae expedita veritatis doloremque fuga
+        possimus nesciunt neque doloribus sed dolorem nemo vero, porro, voluptates cupiditate perspiciatis ratione unde
+        incidunt eveniet?</p>
+    <hr>
+
+
+    <h2>FLOAT RIGHT</h2>
+    <div class="floatr">
+        <p>float right</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis quisquam voluptas autem at quidem omnis rem,
+        voluptatum a, laboriosam laudantium saepe alias deleniti unde illum. Alias culpa consequatur sapiente.</p>
+    <hr>
+
+    <h2>FLOAT NONE</h2>
+    <div class="floatnone">
+        <p>float none</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officia rerum, iure corporis expedita doloremque
+        est necessitatibus tenetur eum distinctio asperiores autem blanditiis quasi? At voluptatum nihil unde eligendi
+        excepturi?</p>
+    <hr>
+    <hr>
+
+    <h1>CLEAR PROPERTY</h1>
+    <hr>
+
+    <h2>CLEAR LEFT</h2>
+
+    <div class="floatcl">
+        <p>floatc left</p>
+    </div>
+
+    <div class="clearl">
+            <p>clear left</p>
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente sed alias eaque itaque laboriosam
+        adipisci, exercitationem animi corrupti vel ex vitae veritatis a, illum pariatur optio illo! Labore, atque!</p>
+
+    <hr>
+
+    <h2>CLEAR RIGHT</h2>
+
+    
+    <div class="floatcr">
+        <p>floatc right</p>
+    </div>
+
+    <div class="clearr">
+            <p>clear right</p>
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente sed alias eaque itaque laboriosam
+        adipisci, exercitationem animi corrupti vel ex vitae veritatis a, illum pariatur optio illo! Labore, atque!</p>
+
+        <hr>
+        <h2>CLEAR BOTH</h2>
+
+         <div class="floatboth1">
+        <p>float left</p>
+    </div>
+
+          <div class="floatboth2">
+        <p>float right</p>
+    </div>
+
+    <div class="clearboth">
+            <p>clear both</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aperiam ratione explicabo quasi ex. Quo sequi voluptatibus qui! Magni expedita tenetur quia reiciendis error nesciunt non suscipit explicabo quaerat autem!</p>
+<hr>
+        <h2>CLEAR NONE</h2>
+        
+          <div class="floatcnone">
+        <p>float right</p>
+    </div>
+
+    <div class="clearnone">
+            <p>clear none</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aperiam ratione explicabo quasi ex. Quo sequi voluptatibus qui! Magni expedita tenetur quia reiciendis error nesciunt non suscipit explicabo quaerat autem!</p> 
+        <hr>
+        <hr>
+        <h1>Z INDEX</h1>
+        <h2>INTEGER</h2>
+
+        <div class="zindex">
+            <p>Z INDEX 0</p>
+        </div>
+
+        <div class="zindex1">
+            <p>Z INDEX 1</p>
+        </div>
+
+          <div class="zindex2">
+            <p>Z INDEX 2</p>
+        </div>
+    </body>
+</html>
