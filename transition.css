@@ -1,0 +1,505 @@
+/* PROPERTY, TIME DURATION, TRANSITION, DELAY */
+h1 {
+    justify-self: center;
+}
+
+.ease {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transition: background-color 1s ease-in-out 0.5s, transform 0.8s ease;
+    justify-self: center;
+}
+
+.ease:hover {
+    background-color: lightgreen;
+    transform: scale(1.3);
+}
+
+.all {
+    background-color: aqua;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: all;
+    transition-duration: 1s;
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+}
+
+.all:hover {
+    background-color: bisque;
+    transform: scale(1.3);
+}
+
+/* BACKGROUND */
+.background {
+    background-color: rgb(19, 177, 40);
+    transition-duration: 1s;
+    transition-timing-function: steps(5);
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+}
+
+.background:hover {
+    background-color: rgb(253, 249, 14);
+    transform: scale(1.3);
+}
+
+/* TRANSFORM */
+.transform {
+    background-color: rgb(113, 142, 152);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+}
+
+.transform:hover {
+    background-color: rgb(231, 27, 23);
+    transform: rotate(90deg);
+}
+
+/* OPACITY */
+.opacity {
+    background-color: rgb(152, 113, 147);
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 1s;
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+}
+
+.opacity:hover {
+    background-color: rgb(201, 162, 84);
+    transform: scale(1.3);
+    opacity: 20%;
+}
+
+/* ANIMATIONS */
+
+.animationbox {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: tomato;
+    animation-name: movebox;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes movebox {
+    0% {
+        transform: translate(0px, -200px);
+        background-color: tomato;
+    }
+
+    25% {
+        transform: translate(200px, -400px);
+        background-color: lightgreen;
+    }
+
+    50% {
+        transform: translate(400px, -600px);
+        background-color: green;
+    }
+
+    75% {
+        transform: translate(600px, -200px);
+        background-color: lightpink;
+    }
+
+    100% {
+        transform: translate(-200px, 0);
+        background-color: tomato;
+    }
+}
+
+/* ANIMATION SHORTHAND */
+
+.football {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url("https://imgs.search.brave.com/jwWQmY-_u3iC_yrOg8FAh1q6HXZxzYtfBYNat3WCWY0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/ODg4LzA3OS9zbWFs/bC8zZC1zb2NjZXIt/YmFsbC1vci1mb290/YmFsbC1wbmcucG5n");
+    background-position: center;
+    background-size: contain;
+    animation: moveball 3s ease-in-out 0.5s infinite forwards running;
+}
+
+@keyframes moveball {
+    0% {
+        transform: rotate(20deg);
+        transform: translate(0px, 0px);
+    }
+
+    10% {
+        transform: rotate(40deg);
+        transform: translate(80px, 0px);
+    }
+
+    20% {
+        transform: rotate(50deg);
+        transform: translate(160px, 0px);
+    }
+
+    30% {
+        transform: rotate(60deg);
+        transform: translate(240px, -100px);
+    }
+
+    40% {
+        transform: rotate(90deg);
+        transform: translate(320px, -500px);
+    }
+
+    50% {
+        transform: rotate(120deg);
+        transform: translate(400px, -800px);
+    }
+
+    100% {
+        transform: rotate(20deg);
+        transform: translate(0px, 0px);
+    }
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+/* ANIMATION NAME */
+
+.move {
+    background-color: aqua;
+    animation-name: moveb;
+    height: 100px;
+    width: 100px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveb {
+    0% {
+        transform: translateX(0px);
+        background-color: aqua;
+    }
+
+    100% {
+        transform: translateX(200px);
+        background-color: red;
+    }
+}
+
+.fade {
+    background-color: rgb(0, 231, 8);
+    animation-name: fadein;
+    height: 100px;
+    width: 100px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
+
+.rotate {
+    background-color: rgb(242, 255, 0);
+    animation-name: rotateb;
+    height: 100px;
+    width: 100px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateb {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(200px);
+        transform: rotate(150deg);
+    }
+}
+
+/* ANIMATION DURATION */
+
+.sec {
+    height: 100px;
+    width: 100px;
+    animation-name: secduration;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: rgb(47, 53, 42);
+    border-radius: 40%;
+}
+
+@keyframes secduration {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(400px, -200px);
+        background-color: rgb(226, 191, 102);
+    }
+}
+
+.milisec {
+    height: 100px;
+    width: 100px;
+    animation-name: msecduration;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: chartreuse;
+    border-radius: 40%;
+}
+
+@keyframes msecduration {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(400px, -200px);
+        background-color: rgb(196, 192, 182);
+    }
+}
+
+/* ANIMATION TIMING FUNCTION */
+.at {
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-name: atf;
+    gap: 20px;
+    border: 3px solid black;
+}
+
+.atflinear {
+    animation-timing-function: linear;
+}
+
+.atfease {
+    animation-timing-function: ease;
+}
+
+.atfeasein {
+    animation-timing-function: ease-in;
+}
+
+.atfeaseout {
+    animation-timing-function: ease-out;
+}
+
+.atfeaseinout {
+    animation-timing-function: ease-in-out;
+}
+
+.cubec {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes atf {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(400px);
+    }
+}
+
+/* ANIMATION DELAY */
+.d {
+    background-color: deeppink;
+    height: 100px;
+    width: 100px;
+    gap: 20px;
+    animation-name: delaybox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.d0s {
+    animation-delay: 0s;
+}
+
+.d2s {
+    animation-delay: 2s;
+}
+
+@keyframes delaybox {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+        background-color: rgb(97, 196, 196);
+    }
+}
+
+/* ANIMATION INTERATION COUNT */
+.it {
+    background-color: rgb(20, 255, 90);
+    height: 100px;
+    width: 100px;
+    gap: 20px;
+    display: inline-block;
+    animation-name: iteratcount;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+.it1 {
+    animation-iteration-count: 1;
+}
+
+.it2 {
+    animation-iteration-count: 2;
+}
+
+.infiniteit {
+    animation-iteration-count: infinite;
+}
+
+@keyframes iteratcount {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(400px);
+        background-color: rgb(96, 78, 175);
+    }
+}
+
+/* ANIMATION DIRECTION */
+.di {
+    background-color: rgb(246, 2, 222);
+    height: 100px;
+    width: 100px;
+    gap: 20px;
+    display: grid;
+    animation-name: direction;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.normal {
+    animation-direction: normal;
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+.alternate {
+    animation-direction: alternate;
+}
+
+.alternaterev {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes direction {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(400px);
+        background-color: rgb(221, 21, 21);
+    }
+}
+
+/* ANIMATION ANIMATION FILL MODE */
+.fi {
+    background-color: rgb(33, 64, 186);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    gap: 20px;
+    display: flex;
+    animation-name: fillmode;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+.none {
+    animation-fill-mode: none;
+}
+
+.forwards {
+    animation-fill-mode: forwards;
+}
+
+.backwards {
+    animation-fill-mode: backwards;
+}
+
+.both {
+    animation-fill-mode: both;
+}
+
+@keyframes  fillmode{
+    0% {
+        background-color: rgb(33, 64, 186) ;
+    }
+
+    100% {
+        background-color: rgb(223, 226, 16);
+    }
+}
+
+    /* ANIMATION PLAYSTATE */
+.pl {
+    background-color: rgb(93, 61, 60);
+    height: 100px;
+    width: 100px;
+    gap: 20px;
+    animation-name: playstate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+.running {
+    animation-play-state: running;
+}
+
+@keyframes playstate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+        background-color: rgb(97, 196, 196);
+    }
+}
